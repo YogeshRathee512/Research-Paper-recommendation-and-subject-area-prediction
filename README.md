@@ -15,9 +15,9 @@ Recommend research papers and predict subject areas using transfer learning.
 
 
 ## 📝 Description
-- **🔄 Comparison**: Compared transfer learning with a Multi-Layer Perceptron for recommending research papers.
-- **🔧 Text Processing**: Performed text vectorization and data cleaning/preprocessing.
-- **🚀 Deployment**: Deployed the model using a Streamlit interface (on a local machine).
+- **🔄 Comparison**: Compared transfer learning (**all-MiniLM-L6-v2**) with a Multi-Layer Perceptron for recommending research papers.
+- **🔧 Text Processing**: Performed text vectorization ,data cleaning and data preprocessing.
+- **🚀 Deployment**: Deployed the model using a **Streamlit** interface (on a local machine).
 
 ## 📂 Dataset
 [ArXiv Paper Abstracts Dataset](https://www.kaggle.com/datasets/spsayakpaul/arxiv-paper-abstracts/data)
