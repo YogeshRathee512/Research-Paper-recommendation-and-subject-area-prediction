@@ -6,8 +6,10 @@
 Recommend research papers and predict subject areas using transfer learning.
 
 ## Procedure
-Convert string in input dataset to literal eval
-string look up to generate unique label for term coloumn and apply multi-hot encoding
+Convert string in input dataset to literal eval ["'cs.LG','cs.CV'"] --> ['cs.LG','cs.CV']
+Create string look up layer to generate a vacbolaruy out of all unique values in terms coloumn and apply multi-hot encoding (to convert terms coloumn)
+Create a vacbolury using all unique words and apply text vectorization using bi gramns and tf_idf (to convert abstract coloumns)
+Used a multiLayer perceptron to predict the label of each research paper
 
 
 
