@@ -5,6 +5,12 @@
 ## 🎯 Objective
 Recommend research papers and predict subject areas using transfer learning.
 
+## Procedure
+Convert string in input dataset to literal eval
+string look up to generate unique label for term coloumn and apply multi-hot encoding
+
+
+
 ## 📸 Screenshots
 
 ### 📝 Input
