@@ -2,7 +2,7 @@
 
 ![Research Paper Recommendation](https://img.shields.io/badge/Research%20Paper%20Recommendation-Brightgreen)
 
-<img width="617" alt="image" src="https://github.com/user-attachments/assets/9efa9874-1ab4-4dfd-9d6e-c83be2a763cf">
+<img width="617" alt="Research Paper Recommendation" src="https://github.com/user-attachments/assets/9efa9874-1ab4-4dfd-9d6e-c83be2a763cf">
 
 ## 🎯 Objective
 Recommend research papers and predict subject areas using transfer learning.
@@ -12,18 +12,18 @@ Recommend research papers and predict subject areas using transfer learning.
 
 ## 🛠 Procedure
 
-1. **Data Preparation**:
-   - Convert string in the input dataset to literal eval format (e.g., `["'cs.LG','cs.CV'"]` --> `['cs.LG','cs.CV']`).
-   - Create a string lookup layer to generate a vocabulary from all unique values in the terms column and apply multi-hot encoding to it.
+1. **📝 Data Preparation**:
+   - Convert strings in the input dataset to literal eval format (e.g., `["'cs.LG','cs.CV'"]` --> `['cs.LG','cs.CV']`).
+   - Create a string lookup layer to generate a vocabulary from all unique values in the terms column and apply multi-hot encoding.
 
-2. **Text Vectorization**:
+2. **🔠 Text Vectorization**:
    - Construct a vocabulary using all unique words from the abstracts.
    - Apply text vectorization using bi-grams and TF-IDF to the abstracts column.
 
-3. **Model Training**:
-   - Use a Multi-Layer Perceptron (MLP) to predict the label of each research paper.
+3. **🤖 Model Training**:
+   - Use a Multi-Layer Perceptron (MLP) to predict the label of each research paper (using abstracts and labels to predict titles and find similar research papers).
 
-4. **Embedding and Recommendation**:
+4. **🔍 Embedding and Recommendation**:
    - Utilize the `all-MiniLM-L6-v2` model from Sentence Transformers to perform word embedding on the title column.
    - Apply Cosine Similarity to find and recommend papers similar to a given input paper.
 
